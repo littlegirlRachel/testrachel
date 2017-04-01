@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello React!</title>
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="Babel.js"></script>
+    <!--官网样例两种写法-->
+    <!--注意添加type-->
+    <!--npm install -g babel-->
+    <style>
+        .pstyle {
+            background-color: lightblue;
+            color:deeppink;
+            font-size: 15px;}
+    </style>
+</head>
+<body>
+<!--渲染组件的三种方法-->
+<!--1.内联在div中-->
+<!--2.设置一个组件为其渲染效果-->
+<!--3.使用style进行选择-->
+<div id="container">
+</div>
+<script type="text/babel">
+    var hStyle=
+    {
+        backgroundColor:"pink",
+        color:"red"
+    }
+ var HelloMessage = React.createClass({
+        render:function(){
+        return(<div style={{backgroundColor:"green",borderWidth:5,borderColor:"black",borderStyle:"solid"}}>
+                    <h1 style={hStyle}>{this.props.firstRow}</h1>
+                    <p className="pstyle">{this.props.secondRow}</p>
+                </div>)
+        ;}
+    }
+    );
+    ReactDOM.render(
+        <HelloMessage firstRow="你好" secondRow="漂亮"/>,
+            document.getElementById('container'))
+</script>
+</body>
+</html>
