@@ -1,0 +1,25 @@
+body {
+    width: 300px;
+    margin: 30px;
+    background-color: #E9E9E9;
+}
+
+div.polaroid {
+    width: 294px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: #ffffff;
+    -moz-box-shadow: 3px;
+    -webkit-box-shadow: 3px;
+    box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+div.rotate-left {
+    float: left;
+    transform: rotate(7deg);
+}
+
+div.rotate-right {
+    float: left;
+    transform: rotate(-7deg);
+}

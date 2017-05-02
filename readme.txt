@@ -4,4 +4,4 @@ Creating a new branch is quick AND simple.
 now we are arriving at branch dev
 $ git branch --set-upstream dev  origin/dev   //to link remote and local txt
 MAY 1st
-MAY 2nd user.name changed
+MAY 2nd user.name changed now I see
